@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* MAIN */
+
+body {
+    background-color: #23111A;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+main{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+}
+
+nav img {
+    height: 50px;
+    width: auto;
+    margin-top: 18px;
+    margin-left: 18px;
+}
+.contenedor{
+    margin: 1.5rem;
+    width: 80%;
+    
+}
+
+/* TEXTAREA */
+
+.contenedor textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 30vh;
+    background: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    padding-left: 12px;
+    padding-top: 12px;
+    outline: none;
+
+}
+
+textarea::placeholder {
+    color: white;
+}
+
+textarea.resultado{
+    border-radius: 5px;
+    border: solid white 1px ;
+
+}
+
+/* BOTONES */
+
+button{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    width: 48%;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: white;   
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+button.encriptar, button.copiar{
+    background-color: #902558;
+    border-color: #902558;
+}
+
+button.desencriptar {
+    border-color: #902558;
+}
+
+button.encriptar:hover, button.copiar:hover{
+    background: none;
+    border-color: white;
+    color: #902558;
+    transition: ease 0.3s;
+}
+
+button.desencriptar:hover{
+    color: #902558;
+    transition: ease 0.3s;
+}
+
+@media screen and (max-width:460px) {
+    
+button {
+    width: 100%;
+}
+
+.botones {
+    display: inline-block;
+}
+
+}
